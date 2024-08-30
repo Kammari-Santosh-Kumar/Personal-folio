@@ -19,6 +19,11 @@ body {
     opacity: 0;
   }
 }
+.pixelated-text {
+  font-size: 16px; /* Base size */
+  font-family: 'Courier New', Courier, monospace; /* Fallback to monospace */
+  image-rendering: pixelated; /* Pixelate effect */
+}
 
 
 
