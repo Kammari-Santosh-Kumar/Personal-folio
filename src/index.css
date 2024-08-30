@@ -25,6 +25,32 @@ body {
   image-rendering: pixelated; /* Pixelate effect */
 }
 
+/* CSS */
+.skills-scroll-container {
+  @apply overflow-hidden whitespace-nowrap py-4;
+}
+
+.skills-scroll-content {
+  @apply inline-block animate-scroll;
+}
+
+.skill-item {
+  @apply mx-4 text-white font-mono;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.skill-logo:hover {
+  filter: brightness(0.8); /* Darkens the logo slightly on hover */
+}
+
+
 
 
 
