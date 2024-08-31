@@ -56,7 +56,6 @@ const Contact = () => {
                   className="w-full bg-black text-white border-none outline-none text-2xl p-2"
                   placeholder="me@gmail.com"
                   disabled={step !== 1}
-                  autoFocus={step === 1}
                 />
               </div>
             )}
@@ -73,7 +72,7 @@ const Contact = () => {
                   className="w-full bg-black text-white border-none outline-none text-2xl p-2"
                   placeholder="Bob Dylan"
                   disabled={step !== 2}
-                  autoFocus={step === 2}
+
                 />
               </div>
             )}
@@ -88,7 +87,6 @@ const Contact = () => {
                   className="w-full bg-black text-white border-none outline-none text-2xl p-2"
                   placeholder="Type your message here..."
                   rows="6"
-                  autoFocus={step === 3}
                 />
               </div>
             )}
