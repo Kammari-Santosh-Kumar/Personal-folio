@@ -13,6 +13,7 @@ import nodejsLogo from '../assets/nodejs.svg';
 import pythonLogo from '../assets/python.svg';
 import tailwindLogo from '../assets/tailwind.svg';
 import typescriptLogo from '../assets/typescript.svg';
+import goLogo from '../assets/gologo.png'
 
 const skills = [
   { name: 'React', logo: reactLogo },
@@ -29,6 +30,7 @@ const skills = [
   { name: 'Python', logo: pythonLogo },
   { name: 'Typescript', logo: typescriptLogo },
   { name: 'Tailwind', logo: tailwindLogo },
+  {name : 'Go', logo: goLogo}
 ];
 
 const Skills = () => {
