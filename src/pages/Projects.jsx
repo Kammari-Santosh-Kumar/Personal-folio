@@ -49,7 +49,12 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center p-8">
+    <div>
+            <div className="flex items-center mb-12">
+        <h2 className="text-6xl font-bold text-white mr-8">Projects</h2>
+        <div className="flex-grow border-t-4 border-white"></div>
+      </div>
+      <div className="min-h-screen bg-black text-white flex items-center justify-center p-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
@@ -85,6 +90,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
