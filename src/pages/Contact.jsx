@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com'; // Import EmailJS
 
 const Contact = () => {
   const [step, setStep] = useState(1); // Tracks the current step in the form
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false); // State for tracking form submission
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
@@ -16,9 +18,30 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = () => {
-    // Handle form submission logic here
-    console.log("Form Submitted:", { email, name, description });
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent form submission reload
+
+    const templateParams = {
+      email,
+      name,
+      description,
+    };
+
+    // Send the email using EmailJS
+    emailjs.send('service_4u0p81m','template_z3nwywd', templateParams,'KNn_BbblQkasCsF9v')
+      .then((response) => {
+        console.log('Email sent successfully:', response.status, response.text);
+        setIsSubmitted(true);
+
+        // Reset form after successful submission
+        setEmail('');
+        setName('');
+        setDescription('');
+        setStep(1); // Go back to the first step
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+      });
   };
 
   return (
@@ -72,7 +95,6 @@ const Contact = () => {
                   className="w-full bg-black text-white border-none outline-none text-2xl p-2"
                   placeholder="Bob Dylan"
                   disabled={step !== 2}
-
                 />
               </div>
             )}
@@ -99,6 +121,13 @@ const Contact = () => {
                   className="bg-white text-black px-6 py-2 text-xl font-bold rounded-lg">
                   Submit
                 </button>
+              </div>
+            )}
+
+            {/* Submission Confirmation */}
+            {isSubmitted && (
+              <div className="text-center text-green-500 mt-4">
+                <p>Email sent successfully!</p>
               </div>
             )}
           </div>
