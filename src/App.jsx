@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import Education from "./pages/Education";
+import Resume from "./pages/Resume";
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
         </section>
         <section id="projects" className="pt-20">
           <Projects />
+        </section>
+        <section id="resume" className="p-20">
+          <Resume />
         </section>
         <section id="education" className="pt-20">
           <Education />

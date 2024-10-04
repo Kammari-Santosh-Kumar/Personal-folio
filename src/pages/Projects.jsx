@@ -1,4 +1,3 @@
-import React from "react";
 import GroupGPTLogo from '../assets/groupgpt.jpg'
 import portfolioLogo from '../assets/portfolio.png'
 import leaderboardLogo from '../assets/leaderboard.png'
