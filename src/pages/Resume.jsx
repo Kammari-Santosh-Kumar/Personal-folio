@@ -20,7 +20,7 @@ const Resume = () => {
         <div className="flex-grow border-t-4 border-white"></div>
       </div>
         <p className="text-lg mb-6 text-white">
-          Find my Resume here 👇
+          Find my Resume here
         </p>
 
         <button 
