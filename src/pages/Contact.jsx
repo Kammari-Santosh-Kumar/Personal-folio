@@ -28,7 +28,7 @@ const Contact = () => {
     };
 
     // Send the email using EmailJS
-    emailjs.send('service_4u0p81m','template_z3nwywd', templateParams,'KNn_BbblQkasCsF9v')
+    emailjs.send('service_htbz629','template_po8849o', templateParams,'MQWUQcru8k1mExmSP')
       .then((response) => {
         console.log('Email sent successfully:', response.status, response.text);
         setIsSubmitted(true);
@@ -70,7 +70,7 @@ const Contact = () => {
             {/* Email Input */}
             {step >= 1 && (
               <div className="mb-8">
-                <p>C:\Users\> Enter your email:</p>
+                <p>C:\Users\ Enter your email:</p>
                 <input
                   type="email"
                   value={email}
@@ -86,7 +86,7 @@ const Contact = () => {
             {/* Name Input */}
             {step >= 2 && (
               <div className="mb-8">
-                <p>C:\Users\> Enter your name:</p>
+                <p>C:\Users\ Enter your name:</p>
                 <input
                   type="text"
                   value={name}
@@ -102,7 +102,7 @@ const Contact = () => {
             {/* Description Input */}
             {step >= 3 && (
               <div className="mb-8">
-                <p>C:\Users\> Enter a description:</p>
+                <p>C:\Users\ Enter a description:</p>
                 <textarea
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}

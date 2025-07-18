@@ -49,49 +49,50 @@ const projects = [
 const Projects = () => {
   return (
     <div>
-            <div className="flex items-center mb-12">
+      <div className="flex items-center mb-12">
         <h2 className="text-6xl font-bold text-white mr-8">Projects</h2>
         <div className="flex-grow border-t-4 border-white"></div>
       </div>
       <div className="min-h-screen bg-black text-white flex items-center justify-center p-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="border border-white p-4 hover:bg-white hover:text-black transition-colors duration-300"
-          >
-            <img
-              src={project.imageUrl}
-              alt={project.title}
-              className="mb-4 w-full h-48 object-cover"
-            />
-            <h2 className="text-lg font-bold">{project.title}</h2>
-            <p className="text-sm mb-4">{project.description}</p>
-            <a
-              href={project.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center hover:text-black"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="border border-white p-4 hover:bg-white hover:text-black transition-colors duration-300 group"  // Added group here
             >
-              {/* GitHub icon that changes on hover */}
               <img
-                src={gitHubLogo}
-                alt="GitHub Link"
-                className="w-6 h-6 mr-2 hover:hidden"
+                src={project.imageUrl}
+                alt={project.title}
+                className="mb-4 w-full h-48 object-cover"
               />
-              <img
-                src={gitIvertLogo}
-                alt="GitHub Link"
-                className="w-6 h-6 hidden hover:inline"
-              />
-              <span className="text-sm">View on GitHub</span>
-            </a>
-          </div>
-        ))}
+              <h2 className="text-lg font-bold">{project.title}</h2>
+              <p className="text-sm mb-4">{project.description}</p>
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center hover:text-black"
+              >
+                {/* GitHub icon that changes on hover */}
+                <img
+                  src={gitHubLogo}
+                  alt="GitHub Link"
+                  className="w-6 h-6 mr-2 group-hover:hidden"  // Added group-hover:hidden to hide on hover
+                />
+                <img
+                  src={gitIvertLogo}
+                  alt="GitHub Link"
+                  className="w-6 h-6 mr-2 hidden group-hover:inline"  // Added group-hover:inline to show on hover
+                />
+                <span className="text-sm">View on GitHub</span>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 };
 
 export default Projects;
+

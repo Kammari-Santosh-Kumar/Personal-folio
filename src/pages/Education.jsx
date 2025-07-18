@@ -3,19 +3,19 @@ import { motion } from "framer-motion";
 const Education = () => {
   const educationData = [
     {
-      institution: "Bhasyam High School",
+      institution: "Bhasyam Educational Institution",
       degree: "Class X",
       year: "2018-2019",
     },
     {
-      institution: "Government Polytechnic, Masab Tank",
-      degree: "Diploma in Computer Engineering",
-      year: "2019 - 2022",
+      institution: "Nano Junior College",
+      degree: "MPC Stream",
+      year: "2019 - 2021",
     },
     {
-      institution: "Chaitanya Bharathi Institute of Engineering",
-      degree: "Bachelors in Computer Science Artificial Intelligence & Machine Learning",
-      year: "2022 - 2025",
+      institution: "Sreenidhi Institute of Science and Technology",
+      degree: "Bachelors of Technology, Information Technology",
+      year: "2021 - 2025",
     },
   ];
 
