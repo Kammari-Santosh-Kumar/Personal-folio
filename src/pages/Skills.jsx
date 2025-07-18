@@ -129,18 +129,10 @@ const skills = [
 const Skills = () => {
   return (
     <Box sx={{ p: 4 }}>
-      <Typography
-        variant="h2"
-        sx={{
-          color: "white",
-          mb: 4,
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
-        Skills
-        <Box sx={{ flexGrow: 1, height: "2px", ml: 2, backgroundColor: "white" }} />
-      </Typography>
+      <h2 className="text-6xl sm:text-6xl font-bold text-white text-center sm:text-left">
+  Skills
+</h2>
+
       <Box
         sx={{
           display: "grid",

@@ -22,7 +22,7 @@ const Education = () => {
   return (
     <section className="space-y-6 p-6">
       <div className="flex items-center mb-12">
-        <h2 className="text-5xl font-bold text-white mr-8">Education</h2>
+        <h2 className="text-5xl sm:text-6x1 font-bold text-white mr-8">Education</h2>
         <div className="flex-grow border-t-2 border-white"></div>
       </div>
       {educationData.map((item, index) => (
