@@ -133,7 +133,7 @@ const Experience = () => {
   return (
     <section className="space-y-8 p-6 bg-black rounded-lg shadow-lg">
       <div className="flex items-center mb-8">
-        <h2 className="text-4xl font-extrabold text-white">Experience</h2>
+        <h2 className="text-5xl sm:text-4x1 font-extrabold text-white">Experience</h2>
         <div className="flex-grow border-t-2 border-gray-500 ml-6"></div>
       </div>
       {educationData.map((item, index) => (
