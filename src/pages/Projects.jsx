@@ -6,44 +6,32 @@ import goodolLogo from '../assets/good-ol.png'
 import chessLogo from '../assets/chessy.jpg'
 import gitHubLogo from '../assets/github.svg'
 import gitIvertLogo from '../assets/gitinvert.png'
+import simonsays from '../assets/simonsays.png'
+import ckp from '../assets/chromakey.jpeg'
+import cry from '../assets/crypto.jpeg'
 
 const projects = [
+
+
   {
-    title: "GroupGPT",
-    description: "An AI chat-app where you can collaborate with your team with a GPT included.",
-    imageUrl: GroupGPTLogo,
-    githubLink: "https://github.com/saiteja1290/grpgpt",
+    title: "Simon Says",
+    description: "Simon Says Game – A fun memory-based game built with JavaScript where players repeat increasingly complex sequences of colors and sounds. Designed with an interactive UI, and responsive gameplay logic to enhance user engagement and test memory skills.",
+    imageUrl: simonsays,
+    githubLink: "https://github.com/Kammari-Santosh-Kumar/Simon-Says",
   },
   {
-    title: "THIS WEBSITE",
-    description: "The portfolio website which is made for monospace and minimalistic designing concept.",
-    imageUrl: portfolioLogo,
-    githubLink: "https://github.com/NithinKonda/portfolio",
+    title: "Chroma Key Processor",
+    description: "Chroma Key Processor – A JavaScript-based application that applies the chroma key (green screen) effect, allowing users to replace a specific background color in images or videos with custom visuals. Built with efficient pixel-level manipulation for real-time processing",
+    imageUrl: ckp,
+    githubLink: "https://github.com/Kammari-Santosh-Kumar/Chroma-Key-Processor",
   },
   {
-    title: "CP Leaderboard",
-    description: "Website for tracking coding progress and rankings across platforms like LeetCode. Join the community, compete, and climb the ranks in competitive coding.",
-    imageUrl: leaderboardLogo,
-    githubLink: "https://github.com/cbitosc/LeaderBoard",
+    title: "Crypto Community Platform",
+    description: "Crypto Community Platform – A web application designed to bring crypto enthusiasts together. It features discussion forums, real-time market updates, community-driven content, and secure authentication.",
+    imageUrl: cry,
+    githubLink: "https://token-disc.vercel.app/",
   },
-  {
-    title: "COSC Hacktoberfest 2023",
-    description: "The central hub for CBIT Hacktoberfest Hackathon 2023, offering dynamic responsiveness, captivating animations, and seamless event registration.",
-    imageUrl: hfestLogo,
-    githubLink: "https://github.com/cbitosc/cbit-hacktoberfest23",
-  },
-  {
-    title: "Good-Ol",
-    description: "A basic arrow game that is compatible with any desktop can be played in any browser.",
-    imageUrl: goodolLogo,
-    githubLink: "https://github.com/NithinKonda/good-ol/",
-  },
-  {
-    title: "Chesscom",
-    description: "A chess.com clone which is implemented with Websockets for real-time gameplay.",
-    imageUrl: chessLogo,
-    githubLink: "https://github.com/NithinKonda/chesscom",
-  },
+
 ];
 
 const Projects = () => {
